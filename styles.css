@@ -28,9 +28,9 @@ body {
 
 section {
     background-color: var(--section-color);
-    max-width: 410px;
+    width: min(410px, 95vw);
     height: fit-content;
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 2rem;
     border-radius: 2rem;
     display: flex;
@@ -102,5 +102,31 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: var(--primary-text-color);
     color: var(--primary-color)
+}
+
+#thanks-state {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    transition-duration: .5s;
+}
+
+figure {
+    margin-top: 1rem;
+}
+
+figcaption {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin-block: 2rem;
+    line-height: 1;
+}
+
+.transparent {
+    opacity: 0;
+    z-index: -1;
+    transition-duration: .5s;
 }
 
