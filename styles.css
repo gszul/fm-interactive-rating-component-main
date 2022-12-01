@@ -46,9 +46,6 @@ section {
     border-radius: 50%;
     padding: 1rem;
     background-color: var(--secondary-color);
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 #star {
@@ -76,18 +73,30 @@ p {
     border: 0;
 }
 
+.rate {
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: 0;
+}
+
 input[type="radio"] {
     appearance: unset;
     position: absolute;
+    z-index: -1;
+    
 }
 
-input[type="radio"]:checked {
+input[type="radio"]:checked,
+input[type="radio"]:checked + span {
     background-color: var(--checked-color);
     color: var(--primary-text-color);
 }
 
-#rate-wrapper > .circle:hover,
-#rate-wrapper > .circle:focus,
+input[type="radio"]:hover,
+input[type="radio"]:hover + span,
 input[type="submit"] {
     cursor: pointer;
     background-color: var(--primary-color);

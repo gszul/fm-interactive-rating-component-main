@@ -26,13 +26,26 @@
             <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             <form action="index.html" method="GET" onsubmit="displayThanks(event)">
                 <fieldset id="rate-wrapper">
-                    <label for="rate_1">1</label>
-                    <input type="radio" id="rate_1" class="circle" name="rate" value="1" required>
-                    <label class="circle" for="rate_2"><input type="radio" id="rate_2" name="rate" value="2" required>2</label>
-                    <label class="circle"><input type="radio" name="rate" value="3" required>3</label>
-                    <label class="circle"><input type="radio" name="rate" value="4" required>4</label>
-                    <label class="circle"><input type="radio" name="rate" value="5" required>5</label>
-                    <input type="radio" name="rate" value="6" required>
+                    <label for="rate_1" class="circle rate">
+                        <input type="radio" id="rate_1" class="circle" name="rate" value="1" required>
+                        <span>1</span>
+                    </label>
+                    <label for="rate_2" class="circle rate">
+                        <input type="radio" id="rate_2" class="circle" name="rate" value="2" required>
+                        <span>2</span>
+                    </label>
+                    <label for="rate_3" class="circle rate"> 
+                        <input type="radio" id="rate_3" class="circle" name="rate" value="3" required>
+                        <span>3</span>
+                    </label>
+                    <label for="rate_4" class="circle rate">
+                        <input type="radio" id="rate_4" class="circle" name="rate" value="4" required>
+                        <span>4</span>
+                    </label>
+                    <label for="rate_5" class="circle rate">
+                        <input type="radio" id="rate_5" class="circle" name="rate" value="5" required>
+                        <span>5</span>
+                    </label>
                 </fieldset>
                 <input type="submit" value="SUBMIT">
             </form>
