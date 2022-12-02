@@ -18,12 +18,13 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: var(--background-color);
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
+    min-height: 95%;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -80,23 +81,26 @@ p {
     justify-content: center;
     background: transparent;
     z-index: 0;
+    cursor: pointer;
 }
 
 input[type="radio"] {
     appearance: unset;
     position: absolute;
     z-index: -1;
-    
 }
 
 input[type="radio"]:checked,
 input[type="radio"]:checked + span {
-    background-color: var(--checked-color);
     color: var(--primary-text-color);
 }
 
-input[type="radio"]:hover,
-input[type="radio"]:hover + span,
+input[type="radio"]:checked {
+    background-color: var(--checked-color);
+}
+
+.rate:hover input[type="radio"],
+.rate:hover span,
 input[type="submit"] {
     cursor: pointer;
     background-color: var(--primary-color);
